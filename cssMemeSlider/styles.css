@@ -54,7 +54,7 @@ body {
 
     & span {
         display: block;
-        border: 0.125rem solid #de6a23;
+        border: 0.125rem solid #39FF14;
         border-radius: 50%;
         transition: background-color 1s;
         height: 50%;
@@ -63,7 +63,7 @@ body {
 
     &:hover {
         & span {
-            background-color: #de6a23;
+            background-color: #39FF14;
         }
     }
 }
@@ -82,4 +82,18 @@ body {
 
 #radio-4:checked~.first {
     margin-left: -75%;
+}
+
+.container-meme-slider:has(#radio-1:checked) .navigation label[for=radio-1] span,
+.container-meme-slider:has(#radio-2:checked) .navigation label[for=radio-2] span,
+.container-meme-slider:has(#radio-3:checked) .navigation label[for=radio-3] span,
+.container-meme-slider:has(#radio-4:checked) .navigation label[for=radio-4] span {
+    background-color: #FF007F;
+}
+
+.container-meme-slider:has(#radio-1:active) .navigation label[for=radio-1] span,
+.container-meme-slider:has(#radio-2:active) .navigation label[for=radio-2] span,
+.container-meme-slider:has(#radio-3:active) .navigation label[for=radio-3] span,
+.container-meme-slider:has(#radio-4:active) .navigation label[for=radio-4] span {
+    background-color: #FFFF00;
 }
