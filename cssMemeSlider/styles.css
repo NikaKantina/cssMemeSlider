@@ -5,8 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #eec0c6;
-    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+    background-color: #3f3f3fba;
 
 }
 
@@ -35,6 +34,9 @@ body {
     width: 25%;
     margin: 0;
     transition: margin 2s;
+    figcaption {
+        margin-top: 0.5%;
+    }
 }
 
 .slide img {
@@ -43,8 +45,9 @@ body {
 }
 
 .slide figcaption {
-    color: #00FFFF;
-    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.885);
+    font-size: 1rem;
+    font-family: monospace;
 }
 
 .navigation {
@@ -56,7 +59,7 @@ body {
 
 .navigation-btn {
     cursor: pointer;
-    height: 100%;
+    height: 60%;
     aspect-ratio: 1 / 1;
     display: flex;
     justify-content: center;
@@ -64,7 +67,7 @@ body {
 
     & span {
         display: block;
-        border: 0.125rem solid #39FF14;
+        border: 0.125rem solid black;
         border-radius: 50%;
         transition: background-color 1s;
         height: 50%;
@@ -73,7 +76,7 @@ body {
 
     &:hover {
         & span {
-            background-color: #39FF14;
+            background-color: white;
         }
     }
 }
@@ -98,14 +101,14 @@ body {
 .container-meme-slider:has(#radio-2:checked) .navigation label[for=radio-2] span,
 .container-meme-slider:has(#radio-3:checked) .navigation label[for=radio-3] span,
 .container-meme-slider:has(#radio-4:checked) .navigation label[for=radio-4] span {
-    background-color: #FF007F;
+    background-color: black;
 }
 
 .container-meme-slider:has(#radio-1:active) .navigation label[for=radio-1] span,
 .container-meme-slider:has(#radio-2:active) .navigation label[for=radio-2] span,
 .container-meme-slider:has(#radio-3:active) .navigation label[for=radio-3] span,
 .container-meme-slider:has(#radio-4:active) .navigation label[for=radio-4] span {
-    background-color: #FFFF00;
+    background-color: #eec0c6;
 }
 
 @media screen and (max-width: 800px) {
@@ -119,6 +122,10 @@ body {
 
     .slide figcaption {
         margin-top: 6%;
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 }
+
+
+
+
