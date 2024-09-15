@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS meme slider</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS: MEME Slider</title>
 </head>
+
 <body>
-    <h1>CSS meme slider</h1>
+
+    <div class="container-meme-slider">
+        <div class="meme-slides">
+            <input type="radio" name="radio-button" id="radio-1" />
+
+            <input type="radio" name="radio-button" id="radio-2" />
+
+            <input type="radio" name="radio-button" id="radio-3" />
+
+            <input type="radio" name="radio-button" id="radio-4" />
+
+            <div class="first slide">
+                <img src='resources/meme-1.jpg' alt="meme-slider">
+            </div>
+            <div class="slide">
+                <img src='resources/meme-2.jpg' alt="meme-slider">
+            </div>
+            <div class="slide">
+                <img src='resources/meme-3.webp' alt="meme-slider">
+            </div>
+            <div class="slide">
+                <img src='resources/meme-4.jpg' alt="meme-slider">
+            </div>
+        </div>
+
+        <div class="navigation">
+            <label for="radio-1" class="navigation-btn">
+                <span></span>
+            </label>
+            <label for="radio-2" class="navigation-btn">
+                <span></span>
+            </label>
+            <label for="radio-3" class="navigation-btn">
+                <span></span>
+            </label>
+            <label for="radio-4" class="navigation-btn">
+                <span></span>
+            </label>
+        </div>
+    </div>
+
 </body>
+
 </html>
